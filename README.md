@@ -1,6 +1,3 @@
-# Kaniz Roksana Riya Portfolio
-
-This portfolio has been converted into a framework-free static website.
 
 ## Run
 
