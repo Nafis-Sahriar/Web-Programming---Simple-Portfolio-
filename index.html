@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Kaniz Roksana Riya, a 3rd Year Software Engineering Student showcasing her skills, projects, and contact information."
+    />
+    <title>Kaniz Roksana Riya - Portfolio</title>
+    <link rel="icon" href="assets/profile.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="min-h-full bg-white text-[#171717] antialiased">
+    <!-- Navbar component begins -->
+    <header class="fixed top-4 left-0 right-0 z-50 flex justify-center">
+      <nav
+        class="relative w-[90%] md:w-[76%] lg:w-[70%] rounded-full border border-white/40 bg-[#d0ded8]/30 shadow-sm backdrop-blur-xl"
+        aria-label="Primary navigation"
+      >
+        <div class="px-4 sm:px-6">
+          <div class="flex h-12 items-center justify-between">
+            <a
+              href="#home"
+              class="text-lg font-bold tracking-wider text-[#18392b]"
+              aria-label="Go to home"
+            >
+              Riya
+            </a>
+
+            <div class="flex space-x-2 lg:space-x-4">
+              <a href="#home" class="nav-link">
+                <i data-lucide="home" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">Home</span>
+              </a>
+              <a href="#about" class="nav-link">
+                <i data-lucide="user" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">About</span>
+              </a>
+              <a href="#education" class="nav-link">
+                <i data-lucide="graduation-cap" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">Education</span>
+              </a>
+              <a href="#skills" class="nav-link">
+                <i data-lucide="code" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">Skills</span>
+              </a>
+              <a href="#projects" class="nav-link">
+                <i data-lucide="folder-git-2" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">Projects</span>
+              </a>
+              <a href="#contact" class="nav-link">
+                <i data-lucide="mail" class="h-3.5 w-3.5"></i>
+                <span class="hidden lg:block">Contact</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar component ends -->
+
+    <main>
+      <!-- Hero component begins -->
+      <section
+        id="home"
+        class="flex min-h-screen w-full items-center justify-center overflow-hidden bg-gradient-to-br from-[#d0ded8]/60 via-white to-[#85aa9b]/20 px-0 pb-12 pt-20 shadow-sm md:pb-0"
+      >
+        <div
+          class="mx-auto flex w-full max-w-7xl flex-col-reverse items-center justify-between gap-12 px-6 md:min-h-[calc(100vh-5rem)] lg:flex-row lg:gap-20 lg:px-8"
+        >
+          <div
+            class="w-full text-center md:w-1/2 md:text-left"
+          >
+            <span
+              class="mb-3 block text-sm font-semibold uppercase tracking-[0.2em] text-[#85aa9b]"
+            >
+              Welcome to my portfolio
+            </span>
+            <h1
+              class="mb-3 text-3xl font-bold leading-[1.1] tracking-tight text-[#18392b] sm:text-4xl lg:text-5xl"
+            >
+              Kaniz Roksana Riya
+            </h1>
+            <h2 class="mb-6 text-lg font-medium text-[#588b76] sm:text-xl">
+              3rd Year Software Engineering Student
+            </h2>
+            <p class="mx-auto mb-8 max-w-md text-base leading-relaxed text-gray-600 md:mx-0">
+              Currently studying at Daffodil International University. I am
+              passionate about building clean, efficient, and user-friendly
+              software systems. Always eager to learn new technologies.
+            </p>
+            <div class="flex w-full flex-col gap-4 sm:w-auto sm:flex-row">
+              <a
+                href="#projects"
+                class="group flex items-center justify-center gap-2 rounded-full bg-[#18392b] px-8 py-3 font-medium text-white shadow-lg shadow-[#18392b]/20 transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#588b76] hover:shadow-xl"
+              >
+                View My Work
+                <i
+                  data-lucide="arrow-right"
+                  class="h-[18px] w-[18px] transition-transform duration-300 group-hover:translate-x-1"
+                ></i>
+              </a>
+              <a
+                href="#home"
+                class="flex items-center justify-center gap-2 rounded-full border-2 border-[#85aa9b] px-8 py-3 font-medium text-[#18392b] transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#d0ded8]/30"
+              >
+                <i data-lucide="file-text" class="h-[18px] w-[18px]"></i>
+                Resume
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="flex w-full justify-center md:w-1/2 md:justify-end"
+          >
+            <div class="relative h-64 w-64 sm:h-80 sm:w-80 lg:h-96 lg:w-96">
+              <div
+                class="absolute inset-0 rounded-full bg-[#d0ded8] opacity-50 blur-3xl"
+              ></div>
+              <div
+                class="relative flex h-full w-full items-center justify-center overflow-hidden rounded-full border-4 border-white bg-[#f4f7f6] shadow-2xl shadow-[#85aa9b]/30"
+              >
+                <img
+                  src="assets/profile.png"
+                  alt="Kaniz Roksana Riya"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero component ends -->
+
+      <!-- About component begins -->
+      <section id="about" class="relative overflow-hidden bg-[#f4f7f6] py-24">
+        <div
+          class="absolute right-0 top-0 -z-10 h-96 w-96 translate-x-1/3 -translate-y-1/3 rounded-full bg-[#d0ded8] opacity-40 blur-[100px]"
+        ></div>
+        <div class="mx-auto w-[90%] max-w-7xl">
+          <div class="flex flex-col items-center gap-16 lg:flex-row">
+            <div class="w-full lg:w-1/2">
+              <h2 class="mb-2 text-sm font-bold uppercase tracking-widest text-[#85aa9b]">
+                Discover
+              </h2>
+              <h3 class="mb-6 text-3xl font-extrabold text-[#18392b] md:text-4xl">
+                About Me
+              </h3>
+              <div class="space-y-4 text-base leading-relaxed text-gray-600 md:text-lg">
+                <p>
+                  Hello! I am Kaniz Roksana Riya, a dedicated and
+                  detail-oriented Software Engineering student currently in my
+                  3rd year at Daffodil International University.
+                </p>
+                <p>
+                  My journey in tech is driven by a strong desire to build
+                  meaningful, efficient, and user-centric applications. Whether
+                  it is designing a clean frontend interface or structuring
+                  solid system logic, I love turning complex problems into
+                  elegant digital solutions.
+                </p>
+              </div>
+            </div>
+
+            <div class="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6 lg:w-1/2">
+              <article class="info-card">
+                <div class="info-icon">
+                  <i data-lucide="graduation-cap" class="h-6 w-6"></i>
+                </div>
+                <h4 class="mb-2 text-lg font-bold text-[#18392b]">Education</h4>
+                <p class="text-sm text-gray-600">
+                  B.Sc. in Software Engineering at DIU, maintaining a strong
+                  academic record.
+                </p>
+              </article>
+              <article class="info-card">
+                <div class="info-icon">
+                  <i data-lucide="code-2" class="h-6 w-6"></i>
+                </div>
+                <h4 class="mb-2 text-lg font-bold text-[#18392b]">Development</h4>
+                <p class="text-sm text-gray-600">
+                  Passionate about full-stack development and modern JavaScript
+                  ecosystems.
+                </p>
+              </article>
+              <article class="info-card">
+                <div class="info-icon">
+                  <i data-lucide="lightbulb" class="h-6 w-6"></i>
+                </div>
+                <h4 class="mb-2 text-lg font-bold text-[#18392b]">
+                  Problem Solving
+                </h4>
+                <p class="text-sm text-gray-600">
+                  Analytical thinker who enjoys tackling challenges and
+                  optimizing system logic.
+                </p>
+              </article>
+              <article
+                class="rounded-2xl border border-[#85aa9b] bg-[#588b76] p-6 shadow-lg transition-transform duration-300 hover:-translate-y-1"
+              >
+                <div
+                  class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-white/20 text-white"
+                >
+                  <i data-lucide="laptop" class="h-6 w-6"></i>
+                </div>
+                <h4 class="mb-2 text-lg font-bold text-white">Always Learning</h4>
+                <p class="text-sm text-[#d0ded8]">
+                  Continuously learning &amp; building projects to master new tools
+                  and industry best practices.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About component ends -->
+
+      <!-- Education component begins -->
+      <section id="education" class="relative overflow-hidden bg-[#f4f7f6] py-24">
+        <div
+          class="pointer-events-none absolute right-0 top-1/4 h-[500px] w-[500px] translate-x-1/3 rounded-full bg-[#d0ded8] opacity-40 blur-[120px]"
+        ></div>
+        <div class="relative z-10 mx-auto w-[90%] max-w-7xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-3 text-sm font-bold uppercase tracking-widest text-[#85aa9b]">
+              Academic Journey
+            </h2>
+            <h3 class="text-3xl font-extrabold text-[#18392b] md:text-5xl">
+              Education
+            </h3>
+            <div class="mx-auto mt-6 h-1.5 w-20 rounded-full bg-[#588b76]"></div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <article class="education-card">
+              <div class="education-card-bg"></div>
+              <div class="relative z-10">
+                <div class="mb-8 flex items-start justify-between gap-4">
+                  <div
+                    class="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#18392b] text-white shadow-md shadow-[#18392b]/20 transition-transform group-hover:rotate-6"
+                  >
+                    <i data-lucide="graduation-cap" class="h-8 w-8"></i>
+                  </div>
+                  <span class="education-date">2024 - Present</span>
+                </div>
+                <h4 class="mb-3 text-2xl font-extrabold text-[#18392b] sm:text-3xl">
+                  B.Sc. in Software Engineering
+                </h4>
+                <div class="mb-8 flex items-center gap-2 text-[#588b76]">
+                  <i data-lucide="library" class="h-[18px] w-[18px]"></i>
+                  <h5 class="text-lg font-semibold">
+                    Daffodil International University
+                  </h5>
+                </div>
+                <div class="grid grid-cols-1 gap-4 rounded-2xl border border-[#d0ded8]/50 bg-[#f4f7f6] p-5 sm:grid-cols-2">
+                  <div>
+                    <p class="mb-1 text-xs uppercase tracking-wider text-gray-500">
+                      Current Status
+                    </p>
+                    <p class="font-bold text-[#18392b]">6th Semester</p>
+                  </div>
+                  <div>
+                    <p class="mb-1 text-xs uppercase tracking-wider text-gray-500">
+                      Academic Score
+                    </p>
+                    <p class="flex items-center gap-1 font-bold text-[#18392b]">
+                      <i data-lucide="award" class="h-4 w-4 text-[#588b76]"></i>
+                      CGPA: 3.90
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-card-bg"></div>
+              <div class="relative z-10">
+                <div class="mb-8 flex items-start justify-between gap-4">
+                  <div
+                    class="flex h-16 w-16 items-center justify-center rounded-2xl bg-[#588b76] text-white shadow-md shadow-[#588b76]/20 transition-transform group-hover:rotate-6"
+                  >
+                    <i data-lucide="book-open" class="h-8 w-8"></i>
+                  </div>
+                  <span class="education-date">Passed in 2022</span>
+                </div>
+                <h4 class="mb-3 text-2xl font-extrabold text-[#18392b] sm:text-3xl">
+                  Higher Secondary Certificate
+                </h4>
+                <div class="mb-8 flex items-center gap-2 text-[#588b76]">
+                  <i data-lucide="library" class="h-[18px] w-[18px]"></i>
+                  <h5 class="text-lg font-semibold">Science Group</h5>
+                </div>
+                <div class="grid grid-cols-1 gap-4 rounded-2xl border border-[#d0ded8]/50 bg-[#f4f7f6] p-5 sm:grid-cols-2">
+                  <div>
+                    <p class="mb-1 text-xs uppercase tracking-wider text-gray-500">
+                      Level
+                    </p>
+                    <p class="font-bold text-[#18392b]">College / HSC</p>
+                  </div>
+                  <div>
+                    <p class="mb-1 text-xs uppercase tracking-wider text-gray-500">
+                      Academic Score
+                    </p>
+                    <p class="flex items-center gap-1 font-bold text-[#18392b]">
+                      <i data-lucide="award" class="h-4 w-4 text-[#588b76]"></i>
+                      GPA: 5.00
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Education component ends -->
+
+      <!-- Skills component begins -->
+      <section id="skills" class="relative overflow-hidden bg-white py-24">
+        <div
+          class="pointer-events-none absolute left-0 top-0 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#d0ded8] opacity-30 blur-[100px]"
+        ></div>
+        <div class="relative z-10 mx-auto w-[90%] max-w-7xl">
+          <div class="flex flex-col items-center gap-12 lg:flex-row lg:gap-20">
+            <div class="w-full lg:w-5/12">
+              <h2 class="mb-2 text-xs font-bold uppercase tracking-widest text-[#85aa9b]">
+                Technical Arsenal
+              </h2>
+              <h3 class="mb-6 text-3xl font-extrabold leading-tight text-[#18392b] lg:text-4xl">
+                My Core Skills &amp; Technologies
+              </h3>
+              <p class="mb-6 text-sm leading-relaxed text-gray-600 lg:text-base">
+                As a Software Engineering student, I have built a solid
+                foundation in core computer science principles and modern
+                development languages.
+              </p>
+              <p class="text-sm leading-relaxed text-gray-600 lg:text-base">
+                From crafting efficient algorithms in C++ to designing robust
+                database management systems and understanding complex system
+                architectures, I am constantly expanding my toolkit to solve
+                real-world technical challenges.
+              </p>
+            </div>
+
+            <div class="w-full lg:w-7/12">
+              <div class="rounded-3xl border border-[#d0ded8] bg-[#f4f7f6] p-8 shadow-sm lg:p-10">
+                <div class="flex flex-wrap gap-3 sm:gap-4">
+                  <span class="skill-badge"><i data-lucide="terminal"></i>C</span>
+                  <span class="skill-badge"><i data-lucide="terminal"></i>C++</span>
+                  <span class="skill-badge"><i data-lucide="code"></i>Java</span>
+                  <span class="skill-badge"><i data-lucide="layout-template"></i>HTML</span>
+                  <span class="skill-badge"><i data-lucide="layout-template"></i>CSS</span>
+                  <span class="skill-badge"><i data-lucide="code"></i>JavaScript</span>
+                  <span class="skill-badge"><i data-lucide="layers"></i>Data Structures</span>
+                  <span class="skill-badge"><i data-lucide="cpu"></i>Algorithms</span>
+                  <span class="skill-badge"><i data-lucide="layers"></i>Object Oriented Programming</span>
+                  <span class="skill-badge"><i data-lucide="database"></i>Database Management System</span>
+                  <span class="skill-badge"><i data-lucide="cpu"></i>System Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Skills component ends -->
+
+      <!-- Projects component begins -->
+      <section
+        id="projects"
+        class="relative overflow-hidden bg-gradient-to-br from-[#f4f7f6] via-white to-[#d0ded8]/40 py-24"
+      >
+        <div
+          class="pointer-events-none absolute bottom-0 right-0 h-[600px] w-[600px] translate-x-1/3 translate-y-1/3 rounded-full bg-[#85aa9b] opacity-10 blur-[150px]"
+        ></div>
+        <div class="relative z-10 mx-auto w-[90%] max-w-7xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-3 text-sm font-bold uppercase tracking-widest text-[#85aa9b]">
+              Showcase
+            </h2>
+            <h3 class="text-3xl font-extrabold text-[#18392b] md:text-4xl">
+              My Projects
+            </h3>
+            <div class="mx-auto mt-6 h-1.5 w-20 rounded-full bg-[#588b76]"></div>
+          </div>
+
+          <div class="grid grid-cols-1 gap-8 md:gap-10 lg:grid-cols-2">
+            <article class="project-card">
+              <div class="mb-6 flex items-start justify-between gap-4">
+                <div class="project-icon bg-[#18392b]">
+                  <i data-lucide="terminal" class="h-7 w-7"></i>
+                </div>
+                <span class="status-pill bg-[#d0ded8]/40 text-[#18392b]">
+                  <i data-lucide="check-circle-2" class="h-3.5 w-3.5 text-[#588b76]"></i>
+                  Completed
+                </span>
+              </div>
+              <h4 class="mb-2 text-2xl font-extrabold text-[#18392b]">
+                Online Examination System
+              </h4>
+              <h5 class="mb-4 flex items-center gap-2 text-sm font-semibold text-[#588b76]">
+                <i data-lucide="folder-git-2" class="h-4 w-4"></i>
+                SWE Capstone Project Course
+              </h5>
+              <p class="mb-8 flex-grow text-sm leading-relaxed text-gray-600 md:text-base">
+                A robust, terminal-based examination platform developed
+                entirely in C. This project focuses on core programming logic,
+                memory management, and secure data handling within a
+                command-line interface, demonstrating a strong command over
+                foundational software engineering principles.
+              </p>
+              <div class="flex flex-wrap gap-2 border-t border-[#d0ded8]/50 pt-4">
+                <span class="tech-tag">C Programming</span>
+                <span class="tech-tag">Terminal CLI</span>
+                <span class="tech-tag">Core Logic</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="mb-6 flex items-start justify-between gap-4">
+                <div class="project-icon bg-[#588b76]">
+                  <i data-lucide="workflow" class="h-7 w-7"></i>
+                </div>
+                <span class="status-pill bg-[#f4f7f6] text-[#588b76]">
+                  <i data-lucide="clock" class="h-3.5 w-3.5"></i>
+                  In Progress
+                </span>
+              </div>
+              <h4 class="mb-2 text-2xl font-extrabold text-[#18392b]">
+                CampusNova: Collaboration Hub
+              </h4>
+              <h5 class="mb-4 flex items-center gap-2 text-sm font-semibold text-[#85aa9b]">
+                <i data-lucide="layout-template" class="h-4 w-4"></i>
+                System Architecture &amp; UI Prototyping
+              </h5>
+              <p class="mb-8 flex-grow text-sm leading-relaxed text-gray-600 md:text-base">
+                Leading the comprehensive system design for a modern student
+                collaboration platform. This involves mapping out the entire
+                software architecture using structural UML diagrams, Data Flow
+                Diagrams (DFD), Block Diagrams, and Entity-Relationship
+                Diagrams (ERD), alongside developing the initial frontend UI
+                prototype.
+              </p>
+              <div class="flex flex-wrap gap-2 border-t border-[#d0ded8]/50 pt-4">
+                <span class="tech-tag alt">UML &amp; ERD</span>
+                <span class="tech-tag alt">DFD &amp; Block Diagrams</span>
+                <span class="tech-tag alt">Frontend Prototype</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Projects component ends -->
+
+      <!-- Contact component begins -->
+      <section id="contact" class="relative overflow-hidden bg-white py-24">
+        <div
+          class="pointer-events-none absolute right-0 top-0 h-[500px] w-[500px] translate-x-1/2 -translate-y-1/3 rounded-full bg-[#d0ded8] opacity-30 blur-[120px]"
+        ></div>
+        <div class="relative z-10 mx-auto w-[90%] max-w-7xl">
+          <div class="mb-16 text-center">
+            <h2 class="mb-3 text-sm font-bold uppercase tracking-widest text-[#85aa9b]">
+              Get In Touch
+            </h2>
+            <h3 class="text-2xl font-extrabold text-[#18392b] md:text-4xl">
+              Contact Me
+            </h3>
+            <div class="mx-auto mt-6 h-1.5 w-20 rounded-full bg-[#588b76]"></div>
+          </div>
+
+          <div class="flex flex-col gap-12 lg:flex-row lg:gap-20">
+            <div class="flex w-full flex-col justify-center lg:w-5/12">
+              <h4 class="mb-6 text-2xl font-bold text-[#18392b]">
+                Let&apos;s Connect
+              </h4>
+              <p class="mb-10 leading-relaxed text-gray-600">
+                Whether you have a question, a project proposal, or just want to
+                say hi, my inbox is always open. I will try my best to get back
+                to you!
+              </p>
+
+              <div class="mb-10 space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="contact-icon">
+                    <i data-lucide="map-pin" class="h-6 w-6"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-sm font-bold uppercase tracking-wider text-[#85aa9b]">
+                      Address
+                    </h5>
+                    <p class="font-semibold text-[#18392b]">
+                      Ashulia, Dhaka, Bangladesh
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="contact-icon">
+                    <i data-lucide="mail" class="h-6 w-6"></i>
+                  </div>
+                  <div>
+                    <h5 class="mb-1 text-sm font-bold uppercase tracking-wider text-[#85aa9b]">
+                      Email
+                    </h5>
+                    <a
+                      href="mailto:kanizroksanariya@gmail.com"
+                      class="font-semibold text-[#18392b] transition-colors hover:text-[#588b76]"
+                    >
+                      kanizroksanariya@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h5 class="mb-4 text-sm font-bold uppercase tracking-wider text-[#85aa9b]">
+                  Follow Me
+                </h5>
+                <div class="flex gap-4">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/kaniz-roksana-riya-714608331/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://www.instagram.com/kaneez_reeya/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-7/12">
+              <div class="rounded-3xl border border-[#d0ded8] bg-[#f4f7f6] p-8 shadow-lg md:p-10">
+                <form id="contact-form" class="space-y-6" novalidate>
+                  <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <div class="space-y-2">
+                      <label for="name" class="text-sm font-semibold text-[#18392b]">
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter Your name"
+                        class="form-field"
+                      />
+                    </div>
+                    <div class="space-y-2">
+                      <label for="email" class="text-sm font-semibold text-[#18392b]">
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Your Email"
+                        class="form-field"
+                      />
+                    </div>
+                  </div>
+                  <div class="space-y-2">
+                    <label for="message" class="text-sm font-semibold text-[#18392b]">
+                      Your Message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows="5"
+                      placeholder="Write your message here..."
+                      class="form-field resize-none"
+                    ></textarea>
+                  </div>
+                  <button
+                    type="button"
+                    disabled
+                    class="mt-4 flex w-full cursor-not-allowed items-center justify-center gap-2 rounded-xl bg-[#85aa9b] px-8 py-3 font-bold text-white opacity-70 transition-all sm:w-auto"
+                  >
+                    <i data-lucide="send" class="h-[18px] w-[18px]"></i>
+                    Send Message (Currently Disabled)
+                  </button>
+                  <p class="mt-2 text-center text-xs text-[#85aa9b] sm:text-left">
+                    * Form submissions are temporarily offline for maintenance.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact component ends -->
+    </main>
+
+    <!-- Footer component begins -->
+    <footer class="relative bg-[#18392b] pb-8 pt-16">
+      <div
+        class="absolute left-0 right-0 top-0 h-1 bg-gradient-to-r from-[#18392b] via-[#588b76] to-[#18392b]"
+      ></div>
+      <div class="mx-auto w-[90%] max-w-7xl">
+        <div class="grid grid-cols-1 gap-12 border-b border-[#588b76]/30 pb-12 md:grid-cols-3">
+          <div class="flex flex-col items-center text-center md:items-start md:text-left">
+            <a href="#home" class="mb-4 text-2xl font-extrabold tracking-wider text-white">
+              Riya<span class="text-[#85aa9b]">.</span>
+            </a>
+            <p class="max-w-xs text-sm leading-relaxed text-[#d0ded8]">
+              A 3rd-year Software Engineering student passionate about building
+              clean, efficient, and modern digital experiences.
+            </p>
+          </div>
+
+          <div class="flex flex-col items-center">
+            <h4 class="mb-6 text-sm font-semibold uppercase tracking-wider text-white">
+              Quick Links
+            </h4>
+            <div class="flex flex-col space-y-3 text-center">
+              <a href="#about" class="footer-link">About Me</a>
+              <a href="#education" class="footer-link">Education</a>
+              <a href="#skills" class="footer-link">Skills</a>
+              <a href="#projects" class="footer-link">Projects</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col items-center md:items-end">
+            <h4 class="mb-6 text-center text-sm font-semibold uppercase tracking-wider text-white md:text-right">
+              Connect
+            </h4>
+            <div class="mb-8 flex gap-4">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kaniz-roksana-riya-714608331/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+            <button
+              id="back-to-top"
+              type="button"
+              class="group flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#85aa9b] transition-colors hover:text-white"
+            >
+              Back to Top
+              <span
+                class="flex h-8 w-8 items-center justify-center rounded-full bg-[#588b76]/20 transition-colors group-hover:bg-[#588b76]"
+              >
+                <i data-lucide="arrow-up" class="h-3.5 w-3.5"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-col items-center justify-between gap-4 text-xs text-[#85aa9b] sm:flex-row">
+          <p>&copy; <span id="current-year"></span> Kaniz Roksana Riya. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer component ends -->
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
